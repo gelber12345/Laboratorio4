@@ -57,12 +57,6 @@ fun LoginSCreen() {
     // we instantiate the saveEmail class
     val dataStore = Data(context)
 
-    var mExpanded by remember { mutableStateOf(false) }
-    val icon = if (mExpanded)
-        Icons.Filled.KeyboardArrowUp
-    else
-        Icons.Filled.KeyboardArrowDown
-
     Column(
             modifier = Modifier
                 .wrapContentSize()

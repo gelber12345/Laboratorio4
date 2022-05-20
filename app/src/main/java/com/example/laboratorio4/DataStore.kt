@@ -1,7 +1,6 @@
 package com.example.laboratorio4
 
 import android.content.Context
-import androidx.compose.ui.unit.dp
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.*
 import androidx.datastore.preferences.preferencesDataStore
@@ -21,9 +20,7 @@ class Data(private val context: Context) {
         val USER_SEMESTRE_KEY = stringPreferencesKey("user_semestre")
         val USER_DURACION_KEY = stringPreferencesKey("user_duracion")
         val USER_TEXTSIZE_KEY = intPreferencesKey("user_size")
-
     }
-
 
     //get the saved Escuela
     val getEscuela: Flow<String?> = context.dataStore.data
